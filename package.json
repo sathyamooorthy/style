@@ -1,0 +1,46 @@
+{
+  "name": "day2-webpack",
+  "version": "1.0.0",
+  "description": "React is the most popular javascript framework which is used by millions of developers around the globe. Creating a React app from Scratch is quite painful as it requires a lot of configuration. We all know that create-react-app gives a nice boilerplate to begin a journey with react, but it lacks some amount of configuration.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --hot --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.11",
+    "@material-ui/core": "^4.4.1",
+    "@material-ui/icons": "^4.4.1",
+    "@material-ui/pickers": "^3.2.6",
+    "file-loader": "^4.2.0",
+    "history": "^4.10.1",
+    "image-webpack-loader": "^6.0.0",
+    "material-table": "^1.50.0",
+    "material-ui-flat-pagination": "^4.0.0",
+    "material-ui-password-field": "^2.1.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-loading-skeleton": "^1.1.2",
+    "react-router-dom": "^5.0.1",
+    "react-swipeable-views": "^0.13.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "@types/date-fns": "^2.6.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}

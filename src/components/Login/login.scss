@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
+
+$font-stack: "Montserrat", sans-serif;
+
+.Login-area {
+  font-family: $font-stack;
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    background-color: #fff;
+    &.left {
+      left: 0;
+      .center-area {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    }
+    &.right {
+      right: 0;
+      .center-area {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .login-head {
+          display: flex;
+          h1 {
+            color: #264195;
+            font-size: 22px;
+            font-weight: 500;
+            margin: 0px;
+          }
+          .material-icons {
+            margin-right: 16px;
+            color: #264195;
+          }
+        }
+        .login-welcome-area {
+          form {
+            width: 350px;
+          }
+          h2 {
+            font-size: 32px;
+            font-weight: 100;
+            color: #2a2a2a;
+          }
+          p {
+            font-size: 14px;
+            color: #2a2a2a;
+            line-height: 24px;
+          }
+          .textfield-area {
+            position: relative;
+            .MuiFormControl-root {
+              width: 340px;
+              &:focus {
+                background: #f3f3f3;
+              }
+              &:active {
+                background: #f3f3f3;
+              }
+              .MuiFormLabel-root {
+                padding-left: 41px;
+              }
+              .MuiInputBase-input {
+                padding-left: 34px;
+              }
+            }
+            .material-icons {
+              position: absolute;
+              bottom: 12px;
+              color: #b9b9b9;
+              z-index: 5;
+            }
+          }
+          .password-area {
+            position: relative;
+            margin-top: 16px;
+            .MuiFormControl-root {
+              width: 340px;
+              .MuiFormLabel-root {
+                padding-left: 41px;
+              }
+              .MuiInputBase-input {
+                padding-left: 34px;
+              }
+            }
+            .material-icons {
+              position: absolute;
+              bottom: 6px;
+              color: #b9b9b9;
+            }
+          }
+          .login-button-area {
+            margin-top: 26px;
+            .MuiButtonBase-root {
+              margin-right: 16px;
+              border-radius: 8px;
+              &.cancel-btn {
+                &.MuiButton-contained {
+                  background-color: #ffffff;
+                  color: #264296;
+                }
+                &:hover {
+                  box-shadow: 2px 3px 3px #949494;
+                }
+              }
+              &.save-btn {
+                &.MuiButton-contained {
+                  background: linear-gradient(270deg, #2b3e95 0%, #0b5496 100%);
+                }
+                &:hover {
+                  box-shadow: 2px 3px 3px #303f9f;
+                }
+              }
+            }
+          }
+          .Remember-area {
+            margin-top: 16px;
+            .MuiFormControlLabel-root {
+              .MuiSvgIcon-root {
+                width: 22px;
+                height: 22px;
+              }
+              .MuiTypography-body1 {
+                font-size: 13px;
+                font-family: $font-stack;
+                color: #2e2e2e;
+              }
+              &:hover {
+                .MuiTypography-body1 {
+                  text-decoration: underline;
+                }
+              }
+            }
+            .MuiButtonBase-root {
+              font-size: 12px;
+              text-transform: capitalize;
+              padding-top: 5px;
+              &.MuiButton-text {
+                margin-top: 4px;
+                float: right;
+                color: #2e2e2e;
+                font-family: $font-stack;
+              }
+              &:hover {
+                background: transparent;
+                .MuiButton-label {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1040px) {
+  .img-fluid {
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .Login-area {
+    .split {
+      width: 100%;
+      &.left {
+        display: none;
+      }
+    }
+  }
+}
+// .img-fluid{
+//     max-width:100%;
+//     height:auto;
+// }
